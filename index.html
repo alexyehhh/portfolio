@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Name - Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+</head>
+<body>
+    <nav>
+        <div class="nav-container">
+            <div class="logo">Alex Yeh</div>
+            <ul class="nav-links">
+                <li><a href="#home" class="nav-link">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#skills" class="nav-link">Skills</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <section id="home" class="section home-section">
+        <div class="container">
+            <div class="profile-image-container">
+                <img src="images/profile_pic.JPEG" alt="Profile" class="profile-image">
+            </div>
+            <h1 class="hero-title">Alex <span class="highlight">Yeh</span></h1>
+            <p class="hero-subtitle">Software Engineer</p>
+            <p class="hero-description">B.S. Computer Science | University of California, Santa Cruz</p>
+            <div class="social-buttons">
+                <a href="https://linkedin.com/in/alexyehhh" class="social-btn" target="_blank">
+                    <i class="fab fa-linkedin fa-2x"></i>
+                </a>
+                <a href="https://github.com/alexyehhh" class="social-btn" target="_blank">
+                    <i class="fab fa-github"></i>
+                </a>
+                <a href="mailto:alex_yeh2@yahoo.com" class="social-btn">
+                    <i class="fas fa-envelope"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="section">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>Hello! My name is Alex Yeh and I am a Computer Science graduate from UC Santa Cruz with a passion for creating products that merge technical innovation with real-world impact. 
+                        I enjoy building intuitive web applications and leading projects that bring ideas to life. 
+                        I love working across both the technical and product sides of development, including designing user experiences, writing backend logic, and managing team collaboration. 
+                        I’m a hands-on learner who thrives in collaborative environments and enjoys solving problems that challenge both logic and creativity.</p>
+                    <p>Outside of coding, you’ll probably find me watching a 49ers or Warriors game, or experimenting with new matcha latte recipes. 
+                        I’m always excited to connect with others who share a passion for technology, design, and building something meaningful.</p>
+                    <a href="Alex_Yeh_Resume.pdf" class="resume-btn" target="_blank">
+                        <i class="fas fa-file-pdf"></i> View Resume
+                    </a>
+                </div>
+                <div class="about-image">
+                    <img src="/images/vsa_grad_pic.JPEG" alt="About Me">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="section">
+        <div class="container">
+            <h2 class="section-title">Projects</h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <h3>UCSC Impact of Generative AI on the Stock Market </h3>
+                    <div class="project-image-placeholder">
+                        <img src="images/Generative_AI_Interface.png" alt="UCSC Impact of Generative AI on the Stock Market" class="project-image">
+                    </div>
+                    <p>A research tool that simulates market trading between human-designed and AI-driven agents.</p>
+                    <ul class="project-points">
+                        <li>Led feature design, development priorities, and integration of AI-driven strategies.</li>
+                        <li>Designed and built a dynamic frontend prototype featuring an interactive, user-friendly trading interface.</li>
+                        <li>Engineered rule-based trading bots, including trend-following and buy-low-sell-high strategies, to simulate realistic market behavior.</li>
+                        <li>Prompt-engineered large language models (LLMs) to autonomously generate and execute custom trading strategies via an automated trade execution system.</li>
+                    </ul>
+                    <div class="project-tags">
+                        <span class="tag">Python</span>
+                        <span class="tag">JavaScript</span>
+                        <span class="tag">HTML</span>
+                        <span class="tag">Claude API</span>
+                        <span class="tag">PostgreSQL</span>
+                        <span class="tag">Bootstrap</span>
+                        <span class="tag">Valkey/Redis</span>
+                    </div>
+                    <a href="https://docs.google.com/presentation/d/1nH806uyrT2Gvmf-YMjs080_eXmpIu2iB6DCgBJ23xkw/edit?usp=sharing" 
+                        class="project-link" 
+                        target="_blank" 
+                        rel="noopener noreferrer">
+                        View Presentation →
+                    </a>
+                </div>
+                <div class="project-card">
+                    <h3>Trading Card Game Tracker</h3>
+                    <div class="project-image-placeholder">
+                        <div class="project-image-slider">
+                            <img src="images/TCG Tracker/TCG_Tracker_Home_Page.png" class="project-image active" alt="TCG Image 1">
+                            <img src="images/TCG Tracker/Card_Details.png" class="project-image" alt="TCG Image 2">
+                            <img src="images/TCG Tracker/Collection.png" class="project-image" alt="TCG Image 3">
+                            <img src="images/TCG Tracker/To_Grade_Collection.png" class="project-image" alt="TCGa Image 4">
+                        </div>
+                    </div>
+                    <p>A web application that helps users track and evaluate the value of their Pokémon cards by displaying recent eBay sales data and calculating potential grading profits.</p>
+                    <ul class="project-points">
+                        <li>Designed the card detail page UI to display market prices, card metadata, and profit calculation tools, improving clarity and usability for card valuation.</li>
+                        <li>Engineered a profit calculation feature to help users estimate card value and determine grading cost efficiency.</li>
+                        <li>Implemented dynamic functionality for the collection and bulk grading pages.</li>
+                    </ul>
+                    <div class="project-tags">
+                        <span class="tag">JavaScript</span>
+                        <span class="tag">React.js</span>
+                        <span class="tag">Python</span>
+                        <span class="tag">HTML</span>
+                        <span class="tag">CSS</span>
+                        <span class="tag">Firebase</span>
+                    </div>
+                    <a href="https://github.com/alexyehhh/TCG_Tracker" 
+                        class="project-link" 
+                        target="_blank" 
+                        rel="noopener noreferrer">
+                        View Code →
+                    </a>
+                </div>
+                <div class="project-card">
+                    <h3>First-Person Exploration Application</h3>
+                    <div class="project-image-placeholder">
+                        <div class="project-image-placeholder">
+                        <img src="images/Park.png" alt="First-Person Exploration Application" class="project-image">
+                    </div>
+                    </div>
+                    <p>A 3D first-person park exploration built with Three.js, showcasing textured models, lighting, and interactive movement within a virtual environment.</p>
+                    <ul class="project-points">
+                        <li>Constructed a 3D park scene with over 20 primary shapes, including textured basketballs, trees, and bark structures.</li>
+                        <li>Added textured 3D models and implemented smooth camera navigation with orbit controls.</li>
+                        <li>Applied three distinct light sources: directional, hemisphere, and point lights for realistic illumination.</li>
+                        <li>Added advanced rendering features including fog, shadows under bouncing basketballs, and billboard firefly sprites with glowing textures.</li>
+                        <li>Integrated a textured skybox and perspective camera to enhance depth and immersion.</li>
+                    </ul>
+                    <div class="project-tags">
+                        <span class="tag">JavaScript</span>
+                        <span class="tag">Three.js</span>
+                        <span class="tag">WebGL</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://alexyehhh.github.io/3D_Park/" 
+                        class="project-link" 
+                        target="_blank" 
+                        rel="noopener noreferrer">
+                        View Project →
+                        </a>
+                        <a href="https://github.com/alexyehhh/3D_Park" 
+                        class="project-link" 
+                        target="_blank" 
+                        rel="noopener noreferrer">
+                        View Code →
+                        </a>
+                    </div>
+
+                </div>
+                <div class="project-card">
+                    <h3>Bird Watching App</h3>
+                    <div class="project-image-placeholder">
+                        <div class="project-image-slider">
+                            <img src="images/Bird Watching/Bird_Watching_Home_Page.png" class="project-image active" alt="Bird Watching Image 1">
+                            <img src="images/Bird Watching/Submit_Checklist.png" class="project-image" alt="Bird Watching Image 2">
+                            <img src="images/Bird Watching/My_Checklists.png" class="project-image" alt="Bird Watching Image 3">
+                        </div>
+                    </div>
+                    <p>A web application inspired by eBird.org that allows users to record and manage bird sightings.</p>
+                    <ul class="project-points">
+                        <li>Developed interactive checklist pages enabling users to create, view, edit, and delete personalized bird watching logs.</li>
+                        <li>Integrated a dynamic map that displays species lists based on real-time latitude and longitude input.</li>
+                        <li>Built a user-friendly form with advanced filters, auto-filled date/time, and species count inputs to streamline data entry.</li>
+                        <li>Connected frontend and backend systems to ensure persistent checklist data with secure, user-specific access.</li>
+                    </ul>
+                    <div class="project-tags">
+                        <span class="tag">Python</span>
+                        <span class="tag">JavaScript</span>
+                        <span class="tag">HTML</span>
+                        <span class="tag">Py4Web</span>
+                    </div>
+                    <a href="https://github.com/alexyehhh/Bird-Watching-App" 
+                        class="project-link" 
+                        target="_blank" 
+                        rel="noopener noreferrer">
+                        View Code →
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills" class="section">
+        <div class="container skills-container">
+            <h2 class="section-title">Skills</h2>
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <h3>Programming Languages</h3>
+                    <div class="skill-bubbles">
+                        <div class="skill-bubble">
+                            <i class="devicon-python-plain colored"></i>
+                            <span>Python</span>
+                        </div>
+                        <div class="skill-bubble">
+                            <i class="devicon-javascript-plain colored"></i>
+                            <span>JavaScript</span>
+                        </div>
+                        <div class="skill-bubble">
+                            <i class="devicon-html5-plain colored"></i>
+                            <span>HTML</span>
+                        </div>
+                        <div class="skill-bubble">
+                            <i class="devicon-css3-plain colored"></i>
+                            <span>CSS</span>
+                        </div>
+                        <div class="skill-bubble">
+                            <i class="devicon-azuresqldatabase-plain colored"></i>
+                            <span>SQL</span>
+                        </div>
+                        <div class="skill-bubble">
+                            <i class="devicon-c-plain colored"></i>
+                            <span>C</span>
+                        </div>
+                        <div class="skill-bubble">
+                            <i class="devicon-cplusplus-plain colored"></i>
+                            <span>C++</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3>Frameworks and Libraries</h3>
+                    <div class="skill-bubbles">
+                        <div class="skill-bubble">
+                            <i class="devicon-react-original colored"></i>
+                            <span>React.js</span>
+                        </div>
+                        <div class="skill-bubble">
+                            <i class="devicon-nodejs-plain colored"></i>
+                            <span>Node.js</span>
+                        </div>
+                        <div class="skill-bubble">           
+                            <i class="devicon-bootstrap-plain colored"></i>
+                            <span>Bootstrap</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3>Tools and Platforms</h3>
+                    <div class="skill-bubbles">
+                        <div class="skill-bubble">
+                            <i class="devicon-git-plain colored"></i>
+                            <span>Git</span>
+                        </div>
+                        <div class="skill-bubble">
+                            <i class="devicon-docker-plain colored"></i>
+                            <span>Docker</span>
+                        </div>
+                        <div class="skill-bubble">
+                            <i class="devicon-firebase-plain colored"></i>
+                            <span>Firebase</span>
+                        </div>
+                        <div class="skill-bubble">        
+                            <i class="devicon-redis-plain colored"></i>
+                            <span>Valkey/Redis</span>
+                        </div>
+                        <div class="skill-bubble">
+                            <i class="devicon-figma-plain colored"></i>
+                            <span>Figma</span>
+                        </div>
+                        <div class="skill-bubble">
+                            <i class="devicon-latex-original"></i>
+                            <span>LaTeX</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3>Project Management</h3>
+                    <div class="skill-bubbles">
+                        <div class="skill-bubble">
+                            <i class="devicon-jira-plain colored"></i>
+                            <span>Jira</span>
+                        </div>
+                        <div class="skill-bubble">
+                            <i class="fas fa-project-diagram"></i>
+                            <span>Agile (Scrum)</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="section">
+        <div class="container">
+            <h2 class="section-title">Get In Touch</h2>
+            <p>Have a question, opportunity in mind, or just want to chat? Feel free to reach out!</p><br>
+            <div class="contact-content">
+                <div class="contact-left">
+                    <form id="contact-form" class="contact-form">
+                        <div class="form-group">
+                            <label for="name">Name</label>
+                            <input type="text" id="name" name="name" placeholder="Your Name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" placeholder="Your Email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" rows="10" placeholder="Your Message" required></textarea>
+                        </div>
+                        <button type="submit" class="btn">Send Message</button>
+                    </form>
+                    <div id="form-status" class="form-status"></div>
+                </div>
+                <div class="contact-right">
+                    <div class="contact-info-item">
+                        <div class="contact-info-header">
+                            <i class="fas fa-envelope"></i>
+                            <h3>Email</h3>
+                        </div>
+                        <p>alex_yeh2@yahoo.com</p>
+                    </div>
+                    <div class="contact-info-item">
+                        <div class="contact-info-header">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <h3>Location</h3>
+                        </div>
+                        <p>San Jose, CA</p>
+                    </div>
+                    <div class="contact-social">
+                        <a href="https://linkedin.com/in/alexyehhh" class="social-btn" target="_blank">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                        <a href="https://github.com/alexyehhh" class="social-btn" target="_blank">
+                            <i class="fab fa-github"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-section">
+                <h4>Built with</h4>
+                <div class="tech-bubbles">
+                    <div class="tech-bubble">
+                        <i class="devicon-html5-plain colored"></i>
+                        <span>HTML</span>
+                    </div>
+                    <div class="tech-bubble">
+                        <i class="devicon-css3-plain colored"></i>
+                        <span>CSS</span>
+                    </div>
+                    <div class="tech-bubble">
+                        <i class="devicon-javascript-plain colored"></i>
+                        <span>JavaScript</span>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-center">
+                <p>&copy; 2024 Alex Yeh. All rights reserved.</p>
+            </div>
+            <div class="footer-section">
+                <h4>Connect</h4>
+                <div class="footer-social">
+                    <a href="https://linkedin.com/in/alexyehhh" target="_blank">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                    <a href="https://github.com/alexyehhh" target="_blank">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="mailto:alex_yeh2@yahoo.com">
+                        <i class="fas fa-envelope"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script>
+        (function() {
+            emailjs.init({
+                publicKey: "GOMeHSc74KIZVSk_u"
+            });
+        })();
+    </script>
+    <script src="script.js"></script>
+</body>
+</html>
