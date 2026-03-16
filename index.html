@@ -20,6 +20,7 @@
                 <li><a href="#about" class="nav-link">About</a></li>
                 <li><a href="#projects" class="nav-link">Projects</a></li>
                 <li><a href="#skills" class="nav-link">Skills</a></li>
+                <li><a href="#certifications" class="nav-link">Certifications</a></li>
                 <li><a href="#contact" class="nav-link">Contact</a></li>
             </ul>
             <div class="hamburger" id="hamburger">
@@ -95,6 +96,35 @@
                 <div class="project-card reveal">
                     <div class="project-image-wrapper">
                         <div class="project-image-placeholder">
+                            <!-- Add your matcha project image here -->
+                            <img src="images/notes_of_matcha.png" alt="Project Notes of Matcha" class="project-image">
+                        </div>
+                    </div>
+                    <div class="project-body">
+                        <h3>Notes of Matcha</h3>
+                        <p>A web app that helps users journal their matcha powders.</p>
+                        <ul class="project-points">
+                            <li>Engineered a full-stack matcha journal, implementing per-user data isolation via PostgreSQL row-level security policies</li>
+                            <li>Designed a relational schema with cascading deletes, triggers, and automated database functions</li>
+                            <li>Built responsive UI views with real-time filtering and keyboard navigation to improve usability</li>
+                            <li>Deployed to production via GitHub, configuring environment variables and schema migrations</li>
+                        </ul>
+                        <div class="project-tags">
+                            <span class="tag">TypeScript</span>
+                            <span class="tag">React</span>
+                            <span class="tag">Supabase</span>
+                            <span class="tag">PostgreSQL</span>
+                            <span class="tag">Docker</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://notes-of-matcha.vercel.app/" class="project-link" target="_blank" rel="noopener noreferrer">View Project →</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card reveal">
+                    <div class="project-image-wrapper">
+                        <div class="project-image-placeholder">
                             <img src="images/Generative_AI_Interface.png" alt="UCSC Generative AI" class="project-image">
                         </div>
                     </div>
@@ -102,10 +132,10 @@
                         <h3>UCSC — Impact of Generative AI on the Stock Market</h3>
                         <p>A research tool that simulates market trading between human-designed and AI-driven agents.</p>
                         <ul class="project-points">
-                            <li>Led AI trading strategy design and development, enhancing user engagement and market analysis capabilities</li>
-                            <li>Engineered a dynamic frontend prototype that improved user interaction and streamlined trading processes</li>
-                            <li>Developed rule-based trading bots, simulating realistic market behavior and optimizing trading performance</li>
-                            <li>Implemented automated trade execution using prompt-engineered LLMs, increasing strategy execution efficiency</li>
+                            <li>Simulated market data and trading activity to generate insights for evaluating automated strategies</li>
+                            <li>Engineered prompt frameworks that translated user-defined trading rules into executable trading logic</li>
+                            <li>Developed rule-based trading bots that simulated realistic market behavior for strategy evaluation</li>
+                            <li>Built an interactive trading interface enabling users to track and analyze market activity, trades, and bot results</li>
                         </ul>
                         <div class="project-tags">
                             <span class="tag">Python</span>
@@ -134,9 +164,10 @@
                         <h3>Trading Card Game Tracker</h3>
                         <p>A web app that helps users track and evaluate Pokémon card values using real eBay sales data.</p>
                         <ul class="project-points">
-                            <li>Designed a user-friendly card detail page that improved clarity and usability for card valuation.</li>
-                            <li>Engineered a profit calculation feature, enabling users to estimate card values and optimize grading costs.</li>
-                            <li>Implemented dynamic functionality for collection management, enhancing user experience and engagement.</li>
+                            <li>Led a 6-person cross-functional team using Scrum to deliver a Pokémon trading card collection management application</li>
+                            <li>Designed a card detail page that improved clarity when viewing card information and valuation data</li>
+                            <li>Engineered a profit calculator enabling users to estimate card value and grading cost tradeoffs</li>
+                            <li>Implemented dynamic card search and display features that improved usability for browsing collections</li>
                         </ul>
                         <div class="project-tags">
                             <span class="tag">JavaScript</span>
@@ -219,38 +250,113 @@
                     <div class="skill-bubbles">
                         <div class="skill-bubble"><i class="devicon-python-plain colored"></i><span>Python</span></div>
                         <div class="skill-bubble"><i class="devicon-javascript-plain colored"></i><span>JavaScript</span></div>
+                        <div class="skill-bubble"><i class="devicon-typescript-plain colored"></i><span>TypeScript</span></div>
                         <div class="skill-bubble"><i class="devicon-html5-plain colored"></i><span>HTML</span></div>
                         <div class="skill-bubble"><i class="devicon-css3-plain colored"></i><span>CSS</span></div>
-                        <div class="skill-bubble"><i class="devicon-azuresqldatabase-plain colored"></i><span>SQL</span></div>
-                        <div class="skill-bubble"><i class="devicon-typescript-plain colored"></i><span>TypeScript</span></div>
                         <div class="skill-bubble"><i class="devicon-c-plain colored"></i><span>C</span></div>
                         <div class="skill-bubble"><i class="devicon-cplusplus-plain colored"></i><span>C++</span></div>
                     </div>
                 </div>
                 <div class="skill-category reveal">
+                    <h3>Databases</h3>
+                    <div class="skill-bubbles">
+                        <div class="skill-bubble"><i class="devicon-postgresql-plain colored"></i><span>PostgreSQL</span></div>
+                        <div class="skill-bubble"><i class="devicon-azuresqldatabase-plain colored"></i><span>SQL</span></div>
+                        <div class="skill-bubble"><i class="devicon-redis-plain colored"></i><span>Redis/Valkey</span></div>
+                    </div>
+                </div>
+                <div class="skill-category reveal">
                     <h3>Frameworks &amp; Libraries</h3>
                     <div class="skill-bubbles">
-                        <div class="skill-bubble"><i class="devicon-react-original colored"></i><span>React.js</span></div>
+                        <div class="skill-bubble"><i class="devicon-react-original colored"></i><span>React</span></div>
                         <div class="skill-bubble"><i class="devicon-nodejs-plain colored"></i><span>Node.js</span></div>
                         <div class="skill-bubble"><i class="devicon-bootstrap-plain colored"></i><span>Bootstrap</span></div>
                     </div>
                 </div>
                 <div class="skill-category reveal">
-                    <h3>Tools &amp; Platforms</h3>
+                    <h3>Web &amp; Dev Tools</h3>
                     <div class="skill-bubbles">
                         <div class="skill-bubble"><i class="devicon-git-plain colored"></i><span>Git</span></div>
                         <div class="skill-bubble"><i class="devicon-docker-plain colored"></i><span>Docker</span></div>
+                        <div class="skill-bubble"><i class="devicon-vercel-original"></i> </i><span>Vercel</span></div>
                         <div class="skill-bubble"><i class="devicon-firebase-plain colored"></i><span>Firebase</span></div>
-                        <div class="skill-bubble"><i class="devicon-redis-plain colored"></i><span>Valkey/Redis</span></div>
+                        <div class="skill-bubble"><i class="devicon-supabase-plain colored"></i><span>Supabase</span></div>
                         <div class="skill-bubble"><i class="devicon-figma-plain colored"></i><span>Figma</span></div>
                         <div class="skill-bubble"><i class="devicon-latex-original"></i><span>LaTeX</span></div>
+                    </div>
+                </div>
+                <div class="skill-category reveal">
+                    <h3>AI &amp; LLMs</h3>
+                    <div class="skill-bubbles">
+                        <div class="skill-bubble"><img src="images/claude_logo.png" alt="Claude" class="skill-logo"><span>Claude</span></div>
+                        <div class="skill-bubble"><img src="images/chatgpt_logo.png" alt="ChatGPT" class="skill-logo"><span>ChatGPT</span></div>
+                        <div class="skill-bubble"><img src="images/gemini_logo.png" alt="Gemini" class="skill-logo"><span>Gemini</span></div>
+                        <div class="skill-bubble"><img src="images/prompt_engineering_logo.png" alt="Prompt Engineering" class="skill-logo"><span>Prompt Engineering</span></div>
                     </div>
                 </div>
                 <div class="skill-category reveal">
                     <h3>Project Management</h3>
                     <div class="skill-bubbles">
                         <div class="skill-bubble"><i class="devicon-jira-plain colored"></i><span>Jira</span></div>
-                        <div class="skill-bubble"><i class="fas fa-project-diagram" style="color:#7b8cde"></i><span>Agile/Scrum</span></div>
+                        <div class="skill-bubble"><i class="fas fa-project-diagram" style="color:#7b8cde"></i><span>Agile (Scrum)</span></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CERTIFICATIONS -->
+    <section id="certifications" class="section">
+        <div class="container">
+            <div class="section-title-wrap"><h2 class="section-title">Certifications</h2></div>
+            <div class="certifications-grid">
+                <!-- Add your certification cards here -->
+                <div class="certification-card reveal">
+                    <div class="certification-icon">
+                        <i class="fas fa-certificate"></i>
+                    </div>
+                    <div class="certification-content">
+                        <h3>AWS Generative AI Applications Professional Certificate</h3>
+                        <p class="certification-issuer">Amazon Web Services</p>
+                        <p class="certification-date">March 2026</p>
+                        <a href="https://www.coursera.org/account/accomplishments/specialization/Y592WF5I2K2X" class="certification-link" target="_blank" rel="noopener noreferrer">View Credential →</a>
+                    </div>
+                </div>
+
+                <div class="certification-card reveal">
+                    <div class="certification-icon">
+                        <i class="fas fa-certificate"></i>
+                    </div>
+                    <div class="certification-content">
+                        <h3>Machine Learning in Python Environment</h3>
+                        <p class="certification-issuer">Alison</p>
+                        <p class="certification-date">February 2026</p>
+                        <a href="https://alison.com/verify/bce6455b0f" class="certification-link" target="_blank" rel="noopener noreferrer">View Credential →</a>
+                    </div>
+                </div>
+
+                <div class="certification-card reveal">
+                    <div class="certification-icon">
+                        <i class="fas fa-certificate"></i>
+                    </div>
+                    <div class="certification-content">
+                        <h3>Product Management: Foundations & Stakeholder Collaboration</h3>
+                        <p class="certification-issuer">SkillUp Online</p>
+                        <p class="certification-date">March 2026</p>
+                        <a href="https://www.coursera.org/account/accomplishments/verify/BUT6I7SD456W" class="certification-link" target="_blank" rel="noopener noreferrer">View Credential →</a>
+                    </div>
+                </div>
+
+                <div class="certification-card reveal">
+                    <div class="certification-icon">
+                        <i class="fas fa-certificate"></i>
+                    </div>
+                    <div class="certification-content">
+                        <h3>IBM AI Product Manager Professional Certificate</h3>
+                        <p class="certification-issuer">IBM</p>
+                        <p class="certification-date">In Progress, Expected March 2026</p>
+                        <!-- Add link to credential once earned -->
+                        <!-- <a href="https://alison.com/verify/bce6455b0f" class="certification-link" target="_blank" rel="noopener noreferrer">View Credential →</a> -->
                     </div>
                 </div>
             </div>
