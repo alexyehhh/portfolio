@@ -645,12 +645,13 @@ nav.scrolled {
 
 .experience-grid {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: 1fr 1fr;
     gap: 2rem;
+    align-items: stretch;
 }
 
 .experience-card {
-    grid-column: span 2;
+    grid-column: span 1;
     background: var(--bg-card);
     border: 1px solid var(--border);
     border-radius: 16px;
@@ -662,6 +663,109 @@ nav.scrolled {
     box-shadow: var(--shadow-sm);
     transform: translateY(0);
     will-change: transform;
+}
+
+/* Grouped card (multiple roles under one employer) */
+.experience-card--grouped {
+    grid-row: span 2;
+}
+
+.experience-card--grouped .experience-company-name {
+    font-size: 1.2rem;
+    font-weight: 700;
+    margin-bottom: 0.15rem;
+}
+
+.experience-card--grouped .experience-company-meta {
+    font-size: 0.82rem;
+    color: var(--text-2);
+    margin-bottom: 0.5rem;
+    white-space: nowrap;
+}
+
+.experience-roles {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+    position: relative;
+}
+
+.experience-role {
+    display: flex;
+    gap: 1rem;
+    position: relative;
+}
+
+.experience-role-marker {
+    position: relative;
+    flex-shrink: 0;
+    width: 12px;
+    margin-top: 4px;
+}
+
+.experience-role-marker::before {
+    content: '';
+    display: block;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: var(--text-2);
+    border: 2px solid var(--border);
+}
+
+.experience-role:not(:last-child) .experience-role-marker::after {
+    content: '';
+    position: absolute;
+    left: 4px;
+    top: 14px;
+    width: 2px;
+    height: calc(100% - 4px);
+    background: var(--border);
+}
+
+.experience-role-content {
+    flex: 1;
+    padding-bottom: 1.4rem;
+}
+
+.experience-role-title {
+    font-size: 1rem;
+    font-weight: 600;
+    margin-bottom: 0.15rem;
+}
+
+.experience-role-title-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    gap: 1rem;
+    margin-bottom: 0.15rem;
+}
+
+.experience-role-title-row .experience-role-title {
+    margin-bottom: 0;
+}
+
+.experience-role-date {
+    font-size: 0.82rem;
+    color: var(--text-2);
+    white-space: nowrap;
+    flex-shrink: 0;
+}
+
+.experience-role-content .experience-dates,
+.experience-role-content .experience-location {
+    font-size: 0.82rem;
+    color: var(--text-2);
+    margin-bottom: 0.1rem;
+}
+
+.experience-role-content .experience-points {
+    margin-top: 0.6rem;
+}
+
+.experience-role-content .experience-tags {
+    margin-top: 0.7rem;
 }
 
 .experience-card:hover,
@@ -738,11 +842,6 @@ nav.scrolled {
     flex-wrap: wrap;
 }
 
-@media (min-width: 1025px) {
-    .experience-card:nth-last-child(1):nth-child(odd) {
-        grid-column: 2 / span 2;
-    }
-}
 
 /* ─── SKILLS ────────────────────────── */
 #skills { background: var(--bg); }
@@ -1198,7 +1297,7 @@ footer .container {
 @media (max-width: 1024px) {
     .projects-grid { grid-template-columns: repeat(4, 1fr); }
     .project-card { grid-column: span 2; }
-    .experience-grid { grid-template-columns: repeat(2,1fr); }
+    .experience-grid { grid-template-columns: 1fr 1fr; }
     .experience-card { grid-column: span 1; }
     .skills-grid { grid-template-columns: repeat(2,1fr); }
     .certifications-grid { grid-template-columns: repeat(2,1fr); gap: 1.5rem; }
@@ -1231,6 +1330,7 @@ footer .container {
     .projects-grid { grid-template-columns: 1fr; }
     .project-card { grid-column: span 1; }
     .experience-grid { grid-template-columns: 1fr; }
+    .experience-card--grouped { grid-row: span 1; }
     .skills-grid { grid-template-columns: repeat(2,1fr); }
     .certifications-grid { grid-template-columns: 1fr; }
     .contact-content { grid-template-columns: 1fr; gap: 2.5rem; }
