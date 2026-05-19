@@ -30,6 +30,6 @@ Each section showcases my technical skills, design sense, and leadership experie
 
 ## Contact
 
-- **Email:** [alex_yeh2@yahoo.com](mailto:alex_yeh2@yahoo.com)
+- **Email:** [alexpyeh@gmail.com](mailto:alexpyeh@gmail.com)
 - **LinkedIn:** [linkedin.com/in/alexyehhh](https://www.linkedin.com/in/alexyehhh)
 - **GitHub:** [github.com/alexyehhh](https://github.com/alexyehhh)
