@@ -1161,7 +1161,8 @@ nav.scrolled {
     display: flex;
     flex-direction: column;
     gap: 1.25rem;
-    margin-top: calc(0.76rem * 1.2 + 0.42rem); /* matches label font-size line-height + gap */
+    /* Align the information card with the first form input, below its label. */
+    margin-top: calc(0.76rem * 1.6 + 0.42rem);
 }
 .contact-info-block {
     background: var(--bg-card);
